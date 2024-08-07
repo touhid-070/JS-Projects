@@ -9,7 +9,6 @@ btn.addEventListener("click", () => {
         .then(function (data) {
             this.data = data;
             let random =Math.floor(Math.random()*data.length)
-            // console.log(random[0].text);
             output.innerHTML = data[random].text;
         })
 })
